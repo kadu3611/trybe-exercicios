@@ -1,1 +1,1 @@
-Aqui estarão todos os exercicios que farei na Trybe. Caso de Dúvidas podem me chamar no Linkedin _[Carlos Eduardo Fernandes](www.linkedin.com/in/carlos-eduardo-fernandes-martins)_ . Chame quando quiser. Obrigado =-)
+Aqui estarão todos os exercicios que farei na Trybe. Em caso de dúvidas podem me chamar no Linkedin _[Carlos Eduardo Fernandes](www.linkedin.com/in/carlos-eduardo-fernandes-martins)_ . Me chame quando quiser. Obrigado =-)
