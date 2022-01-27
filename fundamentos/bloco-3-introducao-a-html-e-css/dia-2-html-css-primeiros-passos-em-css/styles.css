@@ -1,0 +1,16 @@
+h1 { font-family: sans-serif;
+        }
+    .back{font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;}
+    p{font-size: 2em;}
+    body {
+        font-style: 16px;
+    font-weight: bold;
+font-style: italic;
+text-align: left;
+text-decoration: underline;}
+#amarelo{background-color:yellow;
+color: blue;}
+#vermelho{background-color: red;}
+#marron{background-color: brown;}
+
