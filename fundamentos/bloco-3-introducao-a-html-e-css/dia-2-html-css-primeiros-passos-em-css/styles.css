@@ -1,6 +1,7 @@
 h1 { font-family: sans-serif;
         }
-    .back{ background:red}
+    .back{font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;}
     p{font-size: 2em;}
     body {
         font-style: 16px;
