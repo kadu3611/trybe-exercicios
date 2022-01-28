@@ -1,0 +1,14 @@
+ol {
+    background-color: yellow;
+}
+ol li:nth-of-type(2n){
+    color:green;
+}
+ol li:nth-of-type(2n-1){
+    text-transform: capitalize;
+}
+
+    
+h1, h2, h3 {
+ color: red;
+}
