@@ -75,11 +75,18 @@
                 let m = document.getElementsByTagName("p")
                 for(i in m ){
             m = document.getElementsByTagName("p")[i]
-            m.innerHTML = m.innerHTML.toLocaleUpperCase();
+            m.innerText = m.innerText.toUpperCase();
                 }
         }
         maiusculo();
-        
+
+        function tags(){
+             let t = document.querySelectorAll("p")[0];
+            
+            
+        }
+        console.log(tags(t))
+       
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
