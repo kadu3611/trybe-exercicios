@@ -63,6 +63,23 @@
             console.log(b)
         }
         console.log(center('white'))
+
+        function texto(t){
+            let tt = document.getElementsByTagName("h1");
+            tt[0].innerText = t;
+            console.log(t)
+        }
+        console.log(texto('Mudando texto padrão do <h1>'))
+
+            function maiusculo(){
+                let m = document.getElementsByTagName("p")
+                for(i in m ){
+            m = document.getElementsByTagName("p")[i]
+            m.innerHTML = m.innerHTML.toLocaleUpperCase();
+                }
+        }
+        maiusculo();
+        
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
