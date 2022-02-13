@@ -1,0 +1,32 @@
+#des{
+    font-size: 10px;
+    text-align: left;
+
+}
+img{
+    width: 270px;
+}
+table tr{
+    border: solid 1px;
+    border-color: black;
+    text-align: left;
+    height: auto;
+    width: auto;
+
+}
+
+td{
+    width: 100px;
+   
+}
+
+ul, li{
+    display: inline;
+    padding: 0px;
+    border-style: none;
+    text-align: center;
+    padding-right: 30px;
+    
+    
+    
+}

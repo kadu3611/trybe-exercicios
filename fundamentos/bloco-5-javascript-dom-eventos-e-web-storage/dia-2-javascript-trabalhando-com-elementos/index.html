@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      //Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
+      let add = document.createElement('h1');
+      add.innerHTML = 'Exercício 5.2 - JavaScript DOM'
+      document.body.appendChild(add);
+
+      //Adicione a tag main com a classe main-content como filho da tag body ;
+      let dois = document.createElement('main');
+        dois.className = 'main-content'
+      document.body.appendChild(dois);
+
+      //03 - Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+
+      let tres = document.createElement('section')
+      let pai = document.getElementsByTagName('main')[0]
+        tres.className = 'center-content';
+        pai.appendChild(tres)
+    //04 - Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+    let quatro = document.createElement('p')
+    let paip = document.getElementsByTagName('section')[0]
+        
+    quatro.innerText = "Fala pai"
+    paip.appendChild(quatro)
+        
+     //Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+
+     let cinco = document.createElement('section')
+      let irmao = document.getElementsByTagName('main')[0]
+        cinco.className = 'left-content';
+        irmao.appendChild(cinco)
+
+    let seis = document.createElement('section')
+      let irmaoz = document.getElementsByTagName('main')[0]
+        seis.className = 'right-content';
+        irmaoz.appendChild(seis)
+
+    let sete = document.createElement('img')
+      let firmao = document.getElementsByTagName
+      ('section')[1]
+      sete.src = "https://picsum.photos/200"
+      
+        firmao.appendChild(sete)
+    
+
+
+
+    
+      let right = document.getElementsByTagName
+      ('section')[2]
+      let numeros = []
+      
+      for(let i=0; i<11; i+=1){
+        
+        let oito = document.createElement('li')[i]
+        numeros = oito[i]
+        oito.innerText =  numeros
+      }
+      
+        
+      
+        right.appendChild(oito)
+
+    
+
+
+    </script>
+  </body>
+</html>
