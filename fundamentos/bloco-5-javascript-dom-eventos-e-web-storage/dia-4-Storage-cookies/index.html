@@ -2,18 +2,34 @@
 <html lang="pt-br">
   <head>
   <meta charset="UTF-8">
+
   <title>Teste</title>
   <link rel="stylesheet" href="style.css">
   </head>
-  <body class="corpo">
+  <body>
     <header> 
-      <h1>teste</h1>
+      <h1>O seu Texto</h1>
     </header>
-    <main>
-      <h3>Meu top 3 do Spotrybefy</h3>
+    <main class="corpo">
+      <p .paragraphs>
+        "Não há quem goste de dor, que a procure e a queira ter, simplesmente porque é dor..."
+      </p>
       
       <input type="text" id="input">      
     </main>
-    <script src="script.js"></script>
+    <script>
+      window.onload = function() {
+      function colorir() {
+        let color = document.getElementById('input')
+        let cor = document.querySelector(".corpo")
+        cor.style.backgroundColor = color.innerHTML
+        localStorage.setItem("backgroundColor", color)
+        color.addEventListener('change', colorir)
+      }
+      
+        
+    }
+
+    </script>
   </body>
 </html>
