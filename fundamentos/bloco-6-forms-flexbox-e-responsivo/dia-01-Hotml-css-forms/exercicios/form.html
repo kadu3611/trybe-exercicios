@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <main class="main">
+    <header class="header-class">Header da página</header>
+    <form action="">
+    <div class="div1">
+        <div class="espaco">
+            <label for="input-name">Nome:</label>
+                <input class="espaco" type="text" id="input-name" autofocus minlength="10" maxlength="40" required>
+        </div>
+        <div class="espaco">
+            <label for="input-email">Email:</label>
+                <input type="text" class="espaco" id="input-email" autofocus minlength="10" maxlength="50" required>
+        </div>
+        <div class="espaco">
+            <input type="radio" id="op1" name="opcao" required class="ponto">
+                 <label for="op1">Cidade</label>
+            <input type="radio" id="op2" name="opcao" required class="ponto">
+                 <label for="op2">Campo</label>
+            <input type="radio" id="op3" name="opcao" required class="ponto">
+                 <label for="op3">Praia</label>
+            <input type="radio" id="op4" name="opcao" required class="ponto">
+                 <label for="op4">Montanhas</label>
+        </div>
+        <div class="espaco" >
+                <div>Espaço para digitar a resposta:</div>
+                <textarea id="area" name="area" cols="40" rows="10" maxlength="500" required ></textarea>
+
+        </div>
+        <div class="espaco">
+            <div class="espaco">Qual a melhor data para realizar sua viagem?</div>
+            <label for="data" >Data:</label>
+            <input type="date" placeholder="dd/mm/aa" required >        
+       </div>
+      
+       <div class="espaco">
+            <input type="checkbox" name="ch1" id="ch1">
+            <label for="ch1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+        
+       </div>
+       <div class="espaco">
+            <input type="checkbox" name="ch1" id="ch2">
+            <label for="ch2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+            
+        </div>
+        <button id="enviar">Enviar</button>
+        <button id="apagar">Apagar</button>
+        <p id="nameUser"></p>
+    </form>
+</main>
+    
+        <script src="script.js"></script>
+</body>
+</html>
