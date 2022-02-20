@@ -10,52 +10,65 @@
 </head>
 <body>
     <main class="main">
-    <header class="header-class">Header da página</header>
-    <form action="">
+    
+    <form action="" method="get">
+        <fieldset><header class="header-class">Header da página</header>
     <div class="div1">
         <div class="espaco">
             <label for="input-name">Nome:</label>
-                <input class="espaco" type="text" id="input-name" autofocus minlength="10" maxlength="40" required>
+                <input class="espaco" type="text" id="input-name"  minlength="10" maxlength="40" required autofocus>
         </div>
         <div class="espaco">
             <label for="input-email">Email:</label>
-                <input type="text" class="espaco" id="input-email" autofocus minlength="10" maxlength="50" required>
+                <input type="text" class="espaco" id="input-email" minlength="10" maxlength="50" required>
         </div>
         <div class="espaco">
-            <input type="radio" id="op1" name="opcao" required class="ponto">
+            <input type="radio" id="op1" name="opcao" required class="ponto" >
                  <label for="op1">Cidade</label>
             <input type="radio" id="op2" name="opcao" required class="ponto">
                  <label for="op2">Campo</label>
             <input type="radio" id="op3" name="opcao" required class="ponto">
                  <label for="op3">Praia</label>
-            <input type="radio" id="op4" name="opcao" required class="ponto">
+            <input type="radio" id="op4" name="opcao" required class="ponto" checked>
                  <label for="op4">Montanhas</label>
         </div>
+        <label for="estado" class="espaco" >Estado:</label>
+        <select name="estado" id="">
+            <option value="">São Paulo</option>
+            <option value="" >Minas Gerais</option>
+            <option value="" >Recife</option>
+            <option value="">Bahia</option>
+            <option value="">Rio de Janeiro</option>
+            <option value="" selected>Outros</option>
+        </select>
+
         <div class="espaco" >
                 <div>Espaço para digitar a resposta:</div>
-                <textarea id="area" name="area" cols="40" rows="10" maxlength="500" required ></textarea>
+                <textarea id="area" name="area" cols="40" rows="10" maxlength="500" required placeholder="Eu estou muito feliz em conquistar essa viagem!"></textarea>
 
         </div>
         <div class="espaco">
             <div class="espaco">Qual a melhor data para realizar sua viagem?</div>
             <label for="data" >Data:</label>
-            <input type="date" placeholder="dd/mm/aa" required >        
+            <input type="date" placeholder="" required>        
        </div>
       
        <div class="espaco">
-            <input type="checkbox" name="ch1" id="ch1">
+            <input type="checkbox" name="ch1" id="ch1" checked >
             <label for="ch1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
         
        </div>
        <div class="espaco">
-            <input type="checkbox" name="ch1" id="ch2">
+            <input type="checkbox" name="ch1" id="ch2" required checked>
             <label for="ch2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
             
         </div>
         <button id="enviar">Enviar</button>
         <button id="apagar">Apagar</button>
         <p id="nameUser"></p>
+    </fieldset>
     </form>
+
 </main>
     
         <script src="script.js"></script>
