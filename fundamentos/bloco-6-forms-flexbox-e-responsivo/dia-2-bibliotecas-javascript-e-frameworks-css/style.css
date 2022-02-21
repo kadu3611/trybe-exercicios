@@ -1,0 +1,44 @@
+.header-class{
+    font-size: 50px;
+}
+.main{
+    padding-left: 50px;
+    
+    
+    
+    text-align:left;
+}
+.div1{
+    padding: 20px;
+    width: 70%;
+    border: black solid 1px ;
+    background-color: rgb(173, 236, 157);
+
+}
+.espaco{
+    margin-top: 5px;
+}
+#area{
+    resize: none;
+    margin-top: 10px;
+}
+#enviar{
+    text-align: center;
+    padding: 5px;
+    width: 80px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#apagar{
+
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80px;
+}
+.ponto{
+   
+}
+.name{
+   
+}
