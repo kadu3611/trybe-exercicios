@@ -19,7 +19,9 @@
      try{
       const value1 = document.getElementById('value1').value;
       const value2 = document.getElementById('value2').value;
-      const umNumero = ()=>{
+      const result = parseInt(value1) + parseInt(value2);
+      const umNumero = (a)=>{
+        
         if (value1 !== '' && value2 === ''){
             throw new Error ('Esta faltando um número no valor 2')  
         }
@@ -29,9 +31,14 @@
         else if (value2 === '' && value1 === ''){
             throw new Error ('Adicione os valores!')  
         }
+        else if (isNaN(result)){
+            throw new Error ('Adicione somente números')  
         }
+        
+        }
+        
       umNumero();
-      const result = parseInt(value1) + parseInt(value2);
+      
       document.getElementById('result').innerHTML = `Resultado: ${result}`;
       document.getElementById('value1').value = '';
       document.getElementById('value2').value = '';
@@ -39,16 +46,19 @@
     catch(error){
         document.getElementById('result').innerHTML = `Resultado: ${error.message}`;
       }
+      /* finally {
+      document.getElementById('value1').value = '';
+      document.getElementById('value2').value = '';
+      
+    } */
 
 }
-   
-    
 
-    
     window.onload = () => {
       const button = document.getElementById('button');
       button.addEventListener('click', sum);
     }
+    
   </script>
 </body>
 </html>
