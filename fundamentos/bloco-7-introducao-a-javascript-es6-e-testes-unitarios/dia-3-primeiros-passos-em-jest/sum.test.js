@@ -1,9 +1,9 @@
 
 
-const {soma, myRemove} = require ('./sum');
+const {soma, myRemove, myFizzBuzz, encode, decode} = require ('./sum');
 
 describe('A função soma', () => {
-test('Vericando se houve a soma de dois números',() => {
+test('Verificando se houve a soma de dois números',() => {
     expect(soma(4,5)).toBe(9);
 });
  test('Verifica se o retorno de zero é zero', () => {
@@ -11,10 +11,59 @@ test('Vericando se houve a soma de dois números',() => {
  })
 })
 describe('A função myRemove', () => {
-test('Vericando se removeu um número da array',() => {
-     expect(myRemove([1, 2, 3, 4], 3)).toBe([ 1, 2, 4 ]);
+test('Verificando se removeu um número da array',() => {
+     expect(myRemove([1, 2, 3, 4], 5)).toEqual([ 1, 2, 3, 4]);
+});
+
+describe('A função myFizzBuzz -fizzbuzz- ', () => {
+    test('Verificando se é fizzbuzz',() => {
+         expect(myFizzBuzz(15)).toEqual('fizzbuzz');});
+
+});
+
+describe('A função myFizzBuzz -fizz-', () => {
+    test('Verificando se é fizz',() => {
+         expect(myFizzBuzz(6)).toEqual('fizz');});
+
+});
+
+describe('A função myFizzBuzz -buzz-', () => {
+    test('Verificando se é buzz',() => {
+         expect(myFizzBuzz(5)).toEqual('buzz');});
+
+});
+describe('A função myFizzBuz. Não divisivel por 3 nem por 5', () => {
+    test('Verificando se aparece o número não divisivel',() => {
+         expect(myFizzBuzz(2)).toBe(2);});
+
+});
+
+describe('A função myFizzBuzz. Testando com letra', () => {
+    test('Verificando se é falso',() => {
+         expect(myFizzBuzz('a')).toEqual(false);});
+
+});
+
+describe('A função encode', () => {
+    test('Verificando encode',() => {
+         expect(typeof encode).toEqual('function')
+        });
+
+});
+describe('A função encode funciona', () => {
+    test('Verificando encode funcina corretamente',() => {
+         expect(encode('a')).toEqual(["1"]);});
+});
+
+describe('A função decode', () => {
+    test('Verificando decode',() => {
+         expect(typeof decode).toEqual('function')
+        });
+
 });
 });
+
+
 
 
 
