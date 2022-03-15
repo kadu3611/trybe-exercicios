@@ -62,22 +62,19 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
-
-
-const expectedResult = {
-    author: {
-      birthYear: 1948,
-      name: 'George R. R. Martin',
-    },
-    genre: 'Fantasia',
-    id: 1,
-    name: 'As Crônicas de Gelo e Fogo',
-    releaseYear: 1991,
-  };
+  const expectedResult = [
+    {
+      id: 6,
+      name: 'O Chamado de Cthulhu',
+      genre: 'Terror',
+      author: { name: 'H. P. Lovecraft', birthYear: 1890 },
+      releaseYear: 1928,
+    }
+  ];
   
-  function getNamedBook() {
-      const nome = books.find(primeiro =>(primeiro.name.split('').length = 26));
+  function oldBooksOrdered() {
     // escreva seu código aqui
-    return nome;
+    const resultado = books.filter((elemento) => (2020 - elemento.releaseYear) > 60).sort((a,b) => a.releaseYear - b.releaseYear);
+    return resultado;
   }
-  console.log(getNamedBook());
+  console.log(oldBooksOrdered());

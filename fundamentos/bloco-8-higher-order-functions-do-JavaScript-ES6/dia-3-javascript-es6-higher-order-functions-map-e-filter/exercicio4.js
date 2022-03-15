@@ -1,5 +1,3 @@
-//Ordenar os livros em ordem decrescente;
-
 const books = [
     {
       id: 1,
@@ -64,11 +62,16 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
-function booksOrderedByReleaseYearDesc() {
-    // escreva aqui seu código
-    const livros = books.sort((a,b) => (a.author.birthYear < b.author.birthYear ? 1 : -1));
-
-    return livros;
+  const expectedResult = [
+    'Frank Herbert',
+    'George R. R. Martin',
+    'Isaac Asimov',
+    'J. R. R. Tolkien',
+  ];
+  
+  function fantasyOrScienceFictionAuthors() {
+    // escreva seu código aqui
+    const resultado = books.filter((elemento) => elemento.genre === 'Ficção Científica' || elemento.genre === 'Fantasia').map((nome) => nome.author.name).sort();
+    return resultado;
   }
-  console.log(booksOrderedByReleaseYearDesc());
-  /* console.log(books[0].author.birthYear) */
+  console.log(fantasyOrScienceFictionAuthors());

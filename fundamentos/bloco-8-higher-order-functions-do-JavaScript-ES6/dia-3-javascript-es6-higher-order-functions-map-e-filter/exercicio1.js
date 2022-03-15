@@ -63,14 +63,17 @@ const books = [
   
   // Adicione o código do exercício aqui:
   const expectedResult = [
-    'O Senhor dos Anéis',
-    'Fundação',
-    'O Chamado de Cthulhu',
+    'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
+    'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
+    'Fundação - Ficção Científica - Isaac Asimov',
+    'Duna - Ficção Científica - Frank Herbert',
+    'A Coisa - Terror - Stephen King',
+    'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
   ];
   
-  function oldBooks() {
+  function formatedBookNames() {
     // escreva seu código aqui
-    const resultado = books.filter((elemento) => (2020 - elemento.releaseYear)>60).map((elemento2) => elemento2.name);
-    return resultado;
+    const criar = books.map((elemento) => `${elemento.name} - ${elemento.genre} - ${elemento.author.name}`);
+    return criar;
   }
-  console.log(oldBooks());
+  console.log(formatedBookNames());

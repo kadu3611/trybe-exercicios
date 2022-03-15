@@ -1,3 +1,6 @@
+
+//Ordenar os livros em ordem decrescente;
+
 const books = [
     {
       id: 1,
@@ -62,15 +65,10 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
-  const expectedResult = [
-    'O Senhor dos Anéis',
-    'Fundação',
-    'O Chamado de Cthulhu',
-  ];
-  
-  function oldBooks() {
-    // escreva seu código aqui
-    const resultado = books.filter((elemento) => (2020 - elemento.releaseYear)>60).map((elemento2) => elemento2.name);
-    return resultado;
-  }
-  console.log(oldBooks());
+
+function someBookWasReleaseOnThe80s() {
+  // escreva seu código aqui
+  const algum = books.some((element) => element >= 1980 < 1990 );
+  return algum;
+}
+console.log(someBookWasReleaseOnThe80s())

@@ -63,14 +63,18 @@ const books = [
   
   // Adicione o código do exercício aqui:
   const expectedResult = [
-    'O Senhor dos Anéis',
-    'Fundação',
-    'O Chamado de Cthulhu',
+    { 
+      id: 1,
+      name: 'As Crônicas de Gelo e Fogo',
+      genre: 'Fantasia',
+      author: { name: 'George R. R. Martin', birthYear: 1948 },
+      releaseYear: 1991
+    }
   ];
   
-  function oldBooks() {
+  function fantasyOrScienceFiction() {
     // escreva seu código aqui
-    const resultado = books.filter((elemento) => (2020 - elemento.releaseYear)>60).map((elemento2) => elemento2.name);
-    return resultado;
+    const filtro = books.filter((elemento) => elemento.genre === 'Fantasia' || elemento.genre === 'Ficção Científica');
+    return filtro;
   }
-  console.log(oldBooks());
+  console.log(fantasyOrScienceFiction());

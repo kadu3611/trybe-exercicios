@@ -1,6 +1,3 @@
-
-//Ordenar os livros em ordem decrescente;
-
 const books = [
     {
       id: 1,
@@ -65,10 +62,31 @@ const books = [
   ];
   
   // Adicione o código do exercício aqui:
+  
+const expectedResult = 'O Senhor dos Anéis';
 
-function someBookWasReleaseOnThe80s() {
+function authorWith3DotsOnName() {
   // escreva seu código aqui
-  const algum = books.some((element) => element >= 1980 < 1990 );
-  return algum;
+  const resultado = books.filter((elemento) => (elemento.author.name.indexOf('H')));
 }
-console.log(someBookWasReleaseOnThe80s())
+
+console.log(authorWith3DotsOnName());
+
+
+
+const numbers = [50, 85, -30, 3, 15];
+
+const getBigger = numbers.reduce((bigger, number) => ((bigger > number) ? bigger : number));
+
+/* const bigger = numbers.reduce(getBigger, 0); */
+console.log(getBigger); // 85
+
+const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
+
+const somaPar = numbers.filter((numero) => numero % 2 === 0).reduce((acumulador, numero) => acumulador + numero);
+console.log(somaPar);
+
+const numbers = [18, 19, 23, 53, 4, 5, 76, 23, 54];
+
+const somaPar = numbers.reduce((acumulador, numero) => (numero % 2 === 0) ? acumulador + numero:acumulador);
+console.log(somaPar);
