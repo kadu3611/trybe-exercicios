@@ -1,0 +1,11 @@
+.titleCss{
+    text-align: center;
+    font-size: 40px;
+
+    }
+
+    .poke{
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+    /*Aqui não a necessidade de importação*/
