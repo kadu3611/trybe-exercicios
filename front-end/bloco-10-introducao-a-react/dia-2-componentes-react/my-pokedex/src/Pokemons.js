@@ -7,12 +7,13 @@ class Pokemons extends Component {// Somente o Component
         
         const { pokemon } = this.props; //this.props é o que veio do App.js, que nosso caso foi o 'pokemon'
     return(
-    <section className="poke">
+    <section className="seccao">
+        <div className="poke">
         <ul> {pokemon.name}</ul>
          <ul>{pokemon.type} </ul>
             <ul>{pokemon.averageWeight.value} {pokemon.averageWeight.measurementUnit} </ul>
-    <div>
              <img src = {pokemon.image} alt="Imagem do Pokemon"/>
+            
              </div>
     </section>
 )

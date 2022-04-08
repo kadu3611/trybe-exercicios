@@ -5,7 +5,35 @@
     }
 
     .poke{
+        display:flex;
         border-radius: 10px;
         border: 1px solid black;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        width: 300px;
+    }
+
+    main {
+        padding-top: 100px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .seccao{
+        text-align: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        justify-content: center;
+
+    }
+
+    ul{
+        display: block;
+        padding: 10px;
+    }
+    img{
+        display: block;
     }
     /*Aqui não a necessidade de importação*/
