@@ -1,0 +1,16 @@
+{
+  "name": "bloco-22-introducao-ao-desenvolvimento-web-com-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "imc": "node imc.js"
+  },
+  "author": "Carlos Eduardo",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
