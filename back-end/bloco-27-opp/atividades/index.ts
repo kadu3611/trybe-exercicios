@@ -1,18 +1,20 @@
 // matrícula, nome, 4 notas de prova, 2 notas de trabalho
-class Escola {
-    private _matricula: string;
-    private _nome: string;
+import Person from './Person';
+import Employe from './Employe';
+
+class Escola extends Person {
+    private _matricula: number;
     private _provas: number[];
     private _trabalhos: number[]
 
-    constructor(m: string, n: string){
-            this._matricula = m;
-            this._nome = n;
-            this._provas = [];
-            this._trabalhos= []
+    constructor(m: number, n: string){
+        super(n);
+        this._matricula = m;
+        this._provas = [];
+        this._trabalhos= []
 
     } 
-    set novaMatricula(matricula: string){
+    set novaMatricula(matricula: number){
         this._matricula = matricula;
     }
 
@@ -21,11 +23,11 @@ class Escola {
     }
 
     set novaNome(nome: string){
-        this._nome = nome;
+        this.name = nome;
     }
 
     get novaNome(){
-        return this._nome;
+        return this.name;
     }
 
     set notaProva(prova: number[]){
@@ -68,13 +70,26 @@ class Escola {
 }
 
 
-const p1 = new Escola('1','Carlos', );
+const Carlos = new Escola(1,'Carlos');
 
-p1.notaProva = [1,2];
-p1.notaTrabalho = [1,2];
-console.log(p1);
-console.log(p1.sumNota(), 'Soma');
-console.log(p1.mediaNota(), 'Média de Notas');
+Carlos.notaProva = [1,2];
+Carlos.notaTrabalho = [1,2];
+console.log(Carlos);
+console.log(Carlos.sumNota(), 'Soma');
+console.log(Carlos.mediaNota(), 'Média de Notas');
+
+const maria = new Escola(1, 'Maria da Consolação');
+const luiza = new Escola(2, 'Luiza Andrade');
+const newPerson = new Employe ('Carlos Eduardo', new Date('1995/02/10'), 10000)
+
+console.log(maria);
+console.log(luiza);
+console.log(newPerson, 'newPerson');
+
+
+
+
+
 
 
 
