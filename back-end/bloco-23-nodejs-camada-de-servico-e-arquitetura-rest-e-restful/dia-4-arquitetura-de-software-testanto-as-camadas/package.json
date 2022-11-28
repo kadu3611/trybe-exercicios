@@ -1,0 +1,12 @@
+{
+  "name": "dia-4-arquitetura-de-software-testanto-as-camadas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests --recursive --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

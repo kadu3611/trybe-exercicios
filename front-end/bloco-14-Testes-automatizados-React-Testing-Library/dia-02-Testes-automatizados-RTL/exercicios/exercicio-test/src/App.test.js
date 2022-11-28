@@ -5,7 +5,9 @@ import App from './App';
 
 test('alterando o valor dos campos e testando o valor guardado', () => {
   render(<App />);
-  const inputNome = screen.getByRole('textbox', { name: /nome/i });
+  const letra = screen.getByText('/a/i');
+  expect(letra).toBeInTheDocument();
+  /* const inputNome = screen.getByRole('textbox', { name: /nome/i });
   expect(inputNome).toBeInTheDocument();
   expect(inputNome).toHaveValue('');
   userEvent.type(inputNome, 'Estudante da Trybe');
@@ -15,5 +17,5 @@ test('alterando o valor dos campos e testando o valor guardado', () => {
   expect(inputEmail).toBeInTheDocument();
   expect(inputEmail).toHaveValue('');
   userEvent.type(inputEmail, 'estudante@trybe.com');
-  expect(inputEmail).toHaveValue('estudante@trybe.com');
-});// feito
+  expect(inputEmail).toHaveValue('estudante@trybe.com'); */
+});// feito 

@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import React from 'react';
 import './App.css';
+import Teste from './Teste.js'
 
 
 
@@ -21,12 +22,12 @@ this.setState((anterior, _props) => ({
 }))
    
    }
-/*  click2(){
-     console.log('fala blaaaaa');
-   } */
+
   render(){
   return (
+    
     <div>
+      <Teste />
   <button onClick={this.click}>{this.state.numeroDeCliques}</button>
   </div>
   )

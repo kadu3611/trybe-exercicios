@@ -1,0 +1,61 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// The current database to use.
+use('class');
+
+// Search for documents in the current collection.
+db.superheroes
+  .find (
+    {
+      "aspects.hairColor": {$in:[
+        "Black", "No Hair"
+        ]}
+      
+    })
+use('class');
+
+    db.superheroes
+  .find (
+    {
+      "aspects.height": {$not:{
+        $lte:180
+      }}
+      
+    })
+
+use('class');
+
+    db.superheroes
+  .countDocuments (
+    {
+      "aspects.weight":{
+        $gte:80, $lte:100
+      },
+      race:{
+        $in:[
+          "Human", "Mutant"
+        ]
+      },
+      publisher:{
+        $ne:"DC Comics"
+      }
+    })
+
+use('class');
+    
+db.superheroes.countDocuments(
+    {
+        $and: [
+            {
+                "aspects.weight": { $gte: 80, $lte: 100 }
+            },
+            {
+                $or: [{ race: "Human" }, { race: "Mutant" }]
+            },
+            {
+                publisher: { $ne: "DC Comics" }
+            }
+        ]
+    }
+).pretty();
